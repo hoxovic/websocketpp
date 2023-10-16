@@ -107,9 +107,7 @@ public:
         transport_type::init_logging(m_alog, m_elog);
     }
 
-
-    /// Destructor
-    ~endpoint<connection,config>() {}
+    ~endpoint() {}
 
     #ifdef _WEBSOCKETPP_DEFAULT_DELETE_FUNCTIONS_
         // no copy constructor because endpoints are not copyable
