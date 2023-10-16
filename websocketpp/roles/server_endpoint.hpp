@@ -71,7 +71,7 @@ public:
         endpoint_type::m_alog->write(log::alevel::devel, "server constructor");
     }
 
-    ~server() {}
+    virtual ~server() noexcept override = default;
 
 #ifdef _WEBSOCKETPP_DEFAULT_DELETE_FUNCTIONS_
     // no copy constructor because endpoints are not copyable

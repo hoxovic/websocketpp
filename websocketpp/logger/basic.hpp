@@ -80,7 +80,7 @@ public:
       , m_dynamic_channels(0)
       , m_out(out) {}
 
-    ~basic() {}
+    virtual ~basic() noexcept = default;
 
     /// Copy constructor
     basic(basic const & other)
